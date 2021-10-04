@@ -1,10 +1,12 @@
+import fundamentals from '../fundamentals.svg'
+
 export const learnSection = () => {
 
   const learn = `
     <div class="container">
       <div class="row align-items-center justify-content-between">
         <div class="col-md">
-          <img src="../assets/img/fundamentals.svg" class="img-fluid" alt="learn The Fundamentals" title="Learn The Fundamentals"/>
+          <img src=${fundamentals} class="img-fluid" alt="learn The Fundamentals" title="Learn The Fundamentals"/>
         </div>
         <div class="col-md p-5">
           <h2>Learn The Fundamentals</h2>

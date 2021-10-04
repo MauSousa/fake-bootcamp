@@ -1,3 +1,5 @@
+import reactImg from '../react.svg'
+
 export const learnReactSection = () => {
   const learnReact = `
     <div class="container">
@@ -17,7 +19,7 @@ export const learnReactSection = () => {
           </a>
         </div>
         <div class="col-md">
-          <img src="../assets/img/react.svg" class="img-fluid" alt="learn React" title="Learn The Fundamentals"/>
+          <img src=${reactImg} class="img-fluid" alt="learn React" title="Learn The Fundamentals"/>
         </div>
       </div>    
     </div>

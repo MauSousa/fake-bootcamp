@@ -1,3 +1,5 @@
+import showcaseImg from '../showcase.svg'
+
 export const showcase = () => {
   const showCaseSection = `
 
@@ -15,7 +17,7 @@ export const showcase = () => {
           Start The Enrollment
         </button>
       </div>
-      <img src="../assets/img/showcase.svg" loading="lazy" class="img-fluid w-50 d-none d-md-block" alt="developer" title="Web Developer"/>
+      <img src=${showcaseImg} loading="lazy" class="img-fluid w-50 d-none d-md-block" alt="developer" title="Web Developer"/>
     </div>
   </div>
   `
