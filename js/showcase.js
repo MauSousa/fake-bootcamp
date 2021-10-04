@@ -10,7 +10,8 @@ export const showcase = () => {
         <p class="lead my-4">
             We focus on teaching our students the fundamentals of the latest and greatest technologies to prepare them for their first dev role
         </p>
-        <button class="btn btn-primary btn-lg">
+        <button class="btn btn-primary btn-lg" data-bs-toggle="modal"
+        data-bs-target="#enroll">
           Start The Enrollment
         </button>
       </div>
