@@ -2,7 +2,7 @@ export const boxes = () => {
   const box = `
 
   <div class="container">
-    <div class="row text-center">
+    <div class="row text-center g-4">
       <div class="col-md mb-2">
         <div class="card bg-dark text-light">
           <div class="card-body text-center">
