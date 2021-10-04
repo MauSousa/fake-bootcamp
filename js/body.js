@@ -3,6 +3,7 @@ import { learnSection } from './learn'
 import { learnReactSection } from './learn-react'
 import { createNavBar } from './navbar'
 import { newsletter } from './newsletter'
+import { questions } from './questions'
 import { showcase } from './showcase'
 
 export const init = () => {
@@ -14,6 +15,8 @@ export const init = () => {
   const BoxesSection = document.createElement('section')
   const LearnSection = document.createElement('section')
   const LearnReactSection = document.createElement('section')
+  const QuestionsSection = document.createElement('section')
+
   
   const navbar = createNavBar()
   const sectionWebDev = showcase()
@@ -21,8 +24,9 @@ export const init = () => {
   const box = boxes()
   const learn = learnSection()
   const learnreact = learnReactSection()
+  const question = questions()
 
-  NavBar.setAttribute('class', 'navbar navbar-expand-lg bg-dark navbar-dark py-3')
+  NavBar.setAttribute('class', 'navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top')
 
   ShowCaseSection.setAttribute('class', 'bg-dark text-light p-5 p-lg-3 pt-lg-5 text-center text-sm-start')
 
@@ -35,12 +39,16 @@ export const init = () => {
   
   LearnReactSection.setAttribute('class', 'p-5 bg-dark text-light')
 
+  QuestionsSection.classList.add('p-5')
+  QuestionsSection.setAttribute('id', 'questions')
+
   NavBar.innerHTML = navbar
   ShowCaseSection.innerHTML = sectionWebDev
   SectionNewsLetter.innerHTML = sectionNewsLetter
   BoxesSection.innerHTML = box
   LearnSection.innerHTML = learn
   LearnReactSection.innerHTML = learnreact
+  QuestionsSection.innerHTML = question
 
   body.append(NavBar)
   body.append(ShowCaseSection)
@@ -48,4 +56,5 @@ export const init = () => {
   body.append(BoxesSection)
   body.append(LearnSection)
   body.append(LearnReactSection)
+  body.append(QuestionsSection)
 }

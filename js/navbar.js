@@ -2,7 +2,7 @@ export const createNavBar = () => {
   const navbar = ` 
   
     <div class="container">
-      <a href="#" class="navbar-brand">Frontend Bootcamp</a>
+      <a href="/" class="navbar-brand">Frontend Bootcamp</a>
       <button 
       class="navbar-toggler"
       type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
